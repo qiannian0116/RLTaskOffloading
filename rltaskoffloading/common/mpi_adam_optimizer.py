@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 from mpi4py import MPI
 
-class MpiAdamOptimizer(tf.train.AdamOptimizer):
+class MpiAdamOptimizer(tf.compat.v1.train.AdamOptimizer):
     """Adam optimizer that averages gradients across mpi processes."""
     def __init__(self, comm, **kwargs):
         self.comm = comm

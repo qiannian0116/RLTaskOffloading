@@ -1,0 +1,1 @@
+INFO:root:========= Testing the transmission rate 3.0Mbps. ============
