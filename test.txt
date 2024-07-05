@@ -1,3 +1,5 @@
+//报错信息
+
 (RLTaskOffloading) (anaconda3) tzz789@ictnj-internet-server4:~/RLTaskOffloading$ python train.py --algo DDQNTO --scenario Number --goal LO --dependency True
 Authorization required, but no authorization protocol specified
 Authorization required, but no authorization protocol specified
