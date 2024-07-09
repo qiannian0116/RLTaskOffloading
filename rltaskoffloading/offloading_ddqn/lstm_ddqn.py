@@ -275,8 +275,6 @@ def ddqn_learning(env,
         if MPI.COMM_WORLD.Get_rank() == 0:
             logger.dumpkvs()
 
-from tqdm import tqdm
-
 def DDQNTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DDQNTO-all-graph-LO",
            unit_type="layer_norm_lstm", num_units=256, learning_rate=0.00005, supervised_learning_rate=0.00005,
            n_features=2, time_major=False, is_attention=True, forget_bias=1.0, dropout=0, num_gpus=1,
@@ -288,7 +286,7 @@ def DDQNTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DDQNTO-all-grap
            batch_size=500, graph_number=500):
 
     logger.configure(logpath, ['stdout', 'json', 'csv'])
-    print("0")
+
     hparams = tf.contrib.training.HParams(
         unit_type=unit_type,
         num_units=num_units,
@@ -308,16 +306,16 @@ def DDQNTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DDQNTO-all-grap
         end_token=end_token,
         is_bidencoder=is_bidencoder
     )
-    print("1")
+
     resource_cluster = Resources(mec_process_capable=(10.0 * 1024 * 1024),
                                  mobile_process_capable=(1.0 * 1024 * 1024), bandwith_up=7.0, bandwith_dl=7.0)
-    print("2")
+
     env = OffloadingEnvironment(resource_cluster=resource_cluster, batch_size=batch_size, graph_number=graph_number,
                                 graph_file_paths=train_graph_file_paths,
                                 time_major=False,
                                 lambda_t=lambda_t, lambda_e=lambda_e,
                                 encode_dependencies=encode_dependencies)
-    print("3")
+
     eval_envs = []
     for path in test_graph_file_paths:
         eval_env = OffloadingEnvironment(resource_cluster=resource_cluster, batch_size=100, graph_number=100,
@@ -329,46 +327,29 @@ def DDQNTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DDQNTO-all-grap
 
         eval_env.calculate_heft_cost()
         eval_envs.append(eval_env)
-    print("4")
     print("Finishing initialization of environment")
 
     model = LSTMDDQN(hparams=hparams, ob_dim=env.input_dim, gamma=0.99, max_grad_norm=1.0)
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-        
-        # Assuming ddqn_learning is a function that contains a loop, add tqdm for progress tracking
-        nupdates = 1000
-        with tqdm(total=nupdates) as pbar:
-            ddqn_learning(env=env,
-                          eval_envs=eval_envs,
-                          ddqn_model=model,
-                          reply_buffer_num=1,
-                          reply_buffer_size=100000,
-                          final_epsilon=0.01,
-                          train_freq=1,
-                          target_freq=5,
-                          nupdates=nupdates,
-                          eval_freq=1,
-                          warmup_episode=10,
-                          nsample_episode=10,
-                          lr=5e-4,
-                          batch_size=500,
-                          update_numbers=10,
-                          load_path=None,
-                          progress_bar=pbar  # Pass progress bar to the learning function
-                          )
-
-# Example modification inside the ddqn_learning function
-def ddqn_learning(env, eval_envs, ddqn_model, reply_buffer_num, reply_buffer_size, final_epsilon, train_freq, 
-                  target_freq, nupdates, eval_freq, warmup_episode, nsample_episode, lr, batch_size, update_numbers, load_path, progress_bar):
-    # Assuming the main loop inside ddqn_learning looks something like this:
-    for update in range(nupdates):
-        # Your training code here
-
-        # Update the progress bar
-        progress_bar.update(1)
-
+        ddqn_learning(env=env,
+                      eval_envs=eval_envs,
+                      ddqn_model=model,
+                      reply_buffer_num=1,
+                      reply_buffer_size=100000,
+                      final_epsilon=0.01,
+                      train_freq=1,
+                      target_freq=5,
+                      nupdates=1000,
+                      eval_freq=1,
+                      warmup_episode=10,
+                      nsample_episode=10,
+                      lr=5e-4,
+                      batch_size=500,
+                      update_numbers=10,
+                      load_path=None
+                      )
 
 def DDQNTO_trans(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/all-graph-LO",
            unit_type="layer_norm_lstm", num_units=256, learning_rate=0.00005, supervised_learning_rate=0.00005,
