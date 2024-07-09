@@ -462,7 +462,7 @@ def learn(hparams, env, eval_envs = None, nupdates=1000, nsample_episode=30, ent
 
     return mean_reward_track
 
-
+# 参数定义：函数接受多个参数，包括学习率、批处理大小、特征数量、GPU数量、层的数量等，这些参数用于配置深度学习模型和训练过程
 def DRLTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DRTO-all-graph-LO",
            unit_type="layer_norm_lstm", num_units=256, learning_rate=0.00005, supervised_learning_rate=0.00005,
            n_features=2, time_major=False, is_attention=True, forget_bias=1.0, dropout=0, num_gpus=1,
@@ -472,8 +472,10 @@ def DRLTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DRTO-all-graph-L
            train_graph_file_paths=["../offloading_data/offload_random10/random.10."],
            test_graph_file_paths=["../offloading_data/offload_random10_test/random.10."],
            batch_size=500, graph_number=500):
+    # 日志配置：使用logger.configure来设置日志路径和格式，便于监控训练过程
     logger.configure(logpath, ['stdout', 'json', 'csv'])
 
+    # 超参数设置：通过tf.contrib.training.HParams设置模型的超参数，如单元类型、单元数量、学习率等
     hparams = tf.contrib.training.HParams(
         unit_type=unit_type,
         num_units=num_units,
@@ -494,9 +496,11 @@ def DRLTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DRTO-all-graph-L
         is_bidencoder=is_bidencoder
     )
 
+    # Resources类实例化创建了一个资源集群，包括MEC和移动设备的处理能力以及上行和下行带宽
     resource_cluster = Resources(mec_process_capable=(10.0 * 1024 * 1024),
                                  mobile_process_capable=(1.0 * 1024 * 1024), bandwith_up=7.0, bandwith_dl=7.0)
 
+    # OffloadingEnvironment类实例化创建了训练和测试环境，这些环境模拟了任务卸载的场景，包括资源限制、任务图等
     env = OffloadingEnvironment(resource_cluster=resource_cluster, batch_size=batch_size,
                                 graph_number=graph_number,
                                 graph_file_paths=train_graph_file_paths,
@@ -507,6 +511,7 @@ def DRLTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DRTO-all-graph-L
 
     eval_envs = []
     for path in test_graph_file_paths:
+        # 评估环境初始化：为每个测试图路径创建一个评估环境，并计算HEFT（Heterogeneous Earliest Finish Time）成本，用于评估任务调度策略的性能
         eval_env = OffloadingEnvironment(resource_cluster=resource_cluster, batch_size=100, graph_number=100,
                                          graph_file_paths=[path],
                                          time_major=False,
@@ -518,6 +523,7 @@ def DRLTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DRTO-all-graph-L
 
     print("Finishing initialization of environment")
 
+    #模型训练：在TensorFlow会话中初始化全局变量，然后调用learn函数开始训练过程。训练过程中，模型将学习如何根据当前环境状态做出任务卸载决策，以优化延迟和能耗
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
         learn(hparams= hparams, env=env, eval_envs=eval_envs, nsample_episode=10, nupdates=3000,

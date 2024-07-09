@@ -5,8 +5,8 @@ from rltaskoffloading.environment.offloading_task_graph import OffloadingTaskGra
 """
 System bandwidth B 20MHz
 UE Bandwidth W 1 MHz
-PTx = 1.258W
-PRx = 1.181W
+PTx = 1.258W  （平均无线发送功率）
+PRx = 1.181W  （平均无线接收功率）
 Noise = -174dbm/Hz
 """
 
