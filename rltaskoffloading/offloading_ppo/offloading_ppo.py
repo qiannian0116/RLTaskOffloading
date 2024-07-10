@@ -496,7 +496,7 @@ def DRLTO_number(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/DRTO-all-graph-L
         is_bidencoder=is_bidencoder
     )
 
-    # Resources类实例化创建了一个资源集群，包括MEC和移动设备的处理能力以及上行和下行带宽
+    # Resources类实例化创建了一个资源集群，包括MEC和移动设备的处理能力以及上行和下行带宽，将传输速率固定为7 Mbps
     resource_cluster = Resources(mec_process_capable=(10.0 * 1024 * 1024),
                                  mobile_process_capable=(1.0 * 1024 * 1024), bandwith_up=7.0, bandwith_dl=7.0)
 

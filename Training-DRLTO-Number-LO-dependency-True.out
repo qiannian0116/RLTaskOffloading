@@ -1,0 +1,15 @@
+nohup: ignoring input
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+WARNING:tensorflow:From /home/tzz789/RLTaskOffloading/rltaskoffloading/common/mpi_adam_optimizer.py:5: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+Logging to ./log/Result-DRLTO-Number-LO-dependency-True
