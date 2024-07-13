@@ -1,0 +1,180 @@
+INFO:root:========= Testing the transmission rate 3.0Mbps. ============
+INFO:root:./rltaskoffloading/offloading_data/offload_random15/random.15.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 905.3130024286112
+INFO:root:energy: 6460.403811480967
+INFO:root:qoe: 0.08762796892321464
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 956.2026645338535
+INFO:root:energy: 6551.9350092063405
+INFO:root:qoe: 0.05693603500200225
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 1663.7433980933827
+INFO:root:energy: 5721.370448316598
+INFO:root:qoe: -0.237657322866528
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 1630.07295406421
+INFO:root:energy: 5738.335553921559
+INFO:root:qoe: -0.22087141157146406
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1053.4447802829743
+INFO:root:energy: 6742.046593811036
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 2307.186914113363
+INFO:root:energy: 4813.656442297617
+INFO:root:qoe: -0.47336224423057316
+INFO:root: 
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.1430843047287337
+INFO:root:optimal qoe latency: 823.7329526042937
+INFO:root:optimal qoe energy: 6171.662243178355
+INFO:root:========= Testing the transmission rate 7.0Mbps. ============
+INFO:root:./rltaskoffloading/offloading_data/offload_random15/random.15.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 744.8997162796771
+INFO:root:energy: 5307.098954014173
+INFO:root:qoe: 0.24527093704089276
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 781.9449075429781
+INFO:root:energy: 5357.253221124877
+INFO:root:qoe: 0.22208417642362388
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 892.3055865664141
+INFO:root:energy: 4263.20216221102
+INFO:root:qoe: 0.24918388039522832
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 908.0654876628943
+INFO:root:energy: 4355.622512169059
+INFO:root:qoe: 0.23749652009010316
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1053.4447802829743
+INFO:root:energy: 6742.046593811036
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 993.072844633886
+INFO:root:energy: 2062.99561812755
+INFO:root:qoe: 0.3664971246443984
+INFO:root: 
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.4091059236021337
+INFO:root:optimal qoe latency: 763.3694139722415
+INFO:root:optimal qoe energy: 2951.0840060440714
+INFO:root:========= Testing the transmission rate 11.0Mbps. ============
+INFO:root:./rltaskoffloading/offloading_data/offload_random15/random.15.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 669.2910215465589
+INFO:root:energy: 4715.044595484577
+INFO:root:qoe: 0.3231124710208406
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 662.3558119443329
+INFO:root:energy: 4421.339726575095
+INFO:root:qoe: 0.34794313479392314
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 729.5583911660584
+INFO:root:energy: 3865.519902364045
+INFO:root:qoe: 0.3598232162236971
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 763.5477528470213
+INFO:root:energy: 4131.347792710224
+INFO:root:qoe: 0.32570794499603095
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1053.4447802829743
+INFO:root:energy: 6742.046593811036
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 635.597047155662
+INFO:root:energy: 1312.8153933538956
+INFO:root:qoe: 0.5951267939380779
+INFO:root: 
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.5959409535484883
+INFO:root:optimal qoe latency: 619.2261439810015
+INFO:root:optimal qoe energy: 1406.268267792178
+INFO:root:========= Testing the transmission rate 15.0Mbps. ============
+INFO:root:./rltaskoffloading/offloading_data/offload_random15/random.15.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 457.74017795085905
+INFO:root:energy: 2370.30164225119
+INFO:root:qoe: 0.6065700325082428
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 480.7613685303529
+INFO:root:energy: 2397.39716207843
+INFO:root:qoe: 0.5929789196500524
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 666.0874233166377
+INFO:root:energy: 3679.9348477687877
+INFO:root:qoe: 0.4056359298404585
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 682.005027794679
+INFO:root:energy: 3813.2187878282275
+INFO:root:qoe: 0.38800149734901296
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1053.4447802829743
+INFO:root:energy: 6742.046593811036
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 469.8852552661896
+INFO:root:energy: 962.7312884595236
+INFO:root:qoe: 0.7013591985107293
+INFO:root: 
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.7013638719823794
+INFO:root:optimal qoe latency: 469.2665469328562
+INFO:root:optimal qoe energy: 966.6377125532736
+INFO:root:========= Testing the transmission rate 19.0Mbps. ============
+INFO:root:./rltaskoffloading/offloading_data/offload_random15/random.15.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 379.62706976790184
+INFO:root:energy: 1971.2461560863615
+INFO:root:qoe: 0.6739110959621699
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 396.817067698805
+INFO:root:energy: 1859.3029804177131
+INFO:root:qoe: 0.6733468084793849
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 632.2738584395458
+INFO:root:energy: 3572.490868792588
+INFO:root:qoe: 0.43084765212793547
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 657.5546135205971
+INFO:root:energy: 3741.43957645063
+INFO:root:qoe: 0.4084437871169908
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1053.4447802829743
+INFO:root:energy: 6742.046593811036
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 374.4820810552647
+INFO:root:energy: 760.0510172048869
+INFO:root:qoe: 0.762639106417755
+INFO:root: 
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.762639106417755
+INFO:root:optimal qoe latency: 374.4820810552647
+INFO:root:optimal qoe energy: 760.0510172048869

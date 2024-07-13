@@ -1,0 +1,309 @@
+INFO:root:=============Test heurestic methods for different n. =============
+INFO:root:lambda_t: 0.5
+INFO:root:lambda_e: 0.5
+INFO:root:./rltaskoffloading/offloading_data/offload_random10_test/random.10.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 533.2563111006873
+INFO:root:energy: 3743.1159115890277
+INFO:root:qoe: 0.21988469893553556
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 556.7015114468165
+INFO:root:energy: 3826.773805450636
+INFO:root:qoe: 0.19448724599340703
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 646.9232211202893
+INFO:root:energy: 2955.065030888585
+INFO:root:qoe: 0.2230722109681677
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 657.6048947531837
+INFO:root:energy: 2996.047011439035
+INFO:root:qoe: 0.21546594440514447
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 723.1429785346985
+INFO:root:energy: 4628.115062622071
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 694.7543029124397
+INFO:root:energy: 1404.4112250832256
+INFO:root:qoe: 0.3606691174218733
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.3944976193764012
+INFO:root:optimal qoe latency: 568.5621689699718
+INFO:root:optimal qoe energy: 1893.4403071394784
+INFO:root:./rltaskoffloading/offloading_data/offload_random15_test/random.15.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 743.2030268492017
+INFO:root:energy: 5299.6566014007785
+INFO:root:qoe: 0.24646916147857273
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 780.7313385434833
+INFO:root:energy: 5357.773788031573
+INFO:root:qoe: 0.2226553960562682
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 886.506481914929
+INFO:root:energy: 4263.20216221102
+INFO:root:qoe: 0.2520717731995814
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 910.8887659431186
+INFO:root:energy: 4508.573888821302
+INFO:root:qoe: 0.22644513922750206
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1053.4447802829743
+INFO:root:energy: 6742.046593811036
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 991.4930573076521
+INFO:root:energy: 2062.99561812755
+INFO:root:qoe: 0.3672696974086318
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -0.41017985846580096
+INFO:root:optimal qoe latency: 760.9391888840539
+INFO:root:optimal qoe energy: 2952.6303592815716
+INFO:root:./rltaskoffloading/offloading_data/offload_random20_test/random.20.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 958.8250568994794
+INFO:root:energy: 6933.037904044321
+INFO:root:qoe: 0.2650062040896189
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 999.7327564437048
+INFO:root:energy: 7040.491488812626
+INFO:root:qoe: 0.24394978504088102
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 1134.4155985945292
+INFO:root:energy: 5764.2572909247065
+INFO:root:qoe: 0.2662705289091173
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 1176.8609458105902
+INFO:root:energy: 5753.275233706361
+INFO:root:qoe: 0.2532472778838479
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1394.4960449123382
+INFO:root:energy: 8924.774687438965
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 1322.8711561546327
+INFO:root:energy: 2730.349403490753
+INFO:root:qoe: 0.37314585621226015
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0
+INFO:root:./rltaskoffloading/offloading_data/offload_random25_test/random.25.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 1194.9526574055808
+INFO:root:energy: 8730.991672518092
+INFO:root:qoe: 0.2867365390672493
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 1239.4530734443663
+INFO:root:energy: 8787.834863484171
+INFO:root:qoe: 0.270292777941895
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 1395.9091482828685
+INFO:root:energy: 7321.846467994428
+INFO:root:qoe: 0.29086372002540417
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 1438.5205243970327
+INFO:root:energy: 7442.665381587285
+INFO:root:qoe: 0.27430628419212105
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 1796.0528694820405
+INFO:root:energy: 11494.73836468506
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 1630.7989317331314
+INFO:root:energy: 3507.941619870322
+INFO:root:qoe: 0.390542797649864
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0
+INFO:root:./rltaskoffloading/offloading_data/offload_random30_test/random.30.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 1454.5292137459346
+INFO:root:energy: 10589.116226925376
+INFO:root:qoe: 0.27656914137528255
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 1500.8289952374869
+INFO:root:energy: 10665.21883275127
+INFO:root:qoe: 0.2625100172606234
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 1692.3764932650154
+INFO:root:energy: 8884.288953915124
+INFO:root:qoe: 0.2817344938371338
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 1721.682467969622
+INFO:root:energy: 8954.406998043693
+INFO:root:qoe: 0.2737362054380796
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 2154.7145264053343
+INFO:root:energy: 13790.172968994142
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 1981.6134484661648
+INFO:root:energy: 4205.769209173148
+INFO:root:qoe: 0.38807879966081205
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0
+INFO:root:./rltaskoffloading/offloading_data/offload_random35_test/random.35.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 1719.989443877084
+INFO:root:energy: 12393.27512173401
+INFO:root:qoe: 0.26047752363175253
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 1757.254282262666
+INFO:root:energy: 12379.485434829972
+INFO:root:qoe: 0.25269066699598036
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 2025.9249987260275
+INFO:root:energy: 10183.37362563043
+INFO:root:qoe: 0.2670939577165224
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 2033.8519108866283
+INFO:root:energy: 10393.583027709894
+INFO:root:qoe: 0.2588052899881004
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 2463.6870020484926
+INFO:root:energy: 15767.596813110351
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 2251.6994917459488
+INFO:root:energy: 4843.661749456307
+INFO:root:qoe: 0.39089868045876197
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0
+INFO:root:./rltaskoffloading/offloading_data/offload_random40_test/random.40.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 1939.05790612466
+INFO:root:energy: 14216.577140344192
+INFO:root:qoe: 0.2883012990199177
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 1992.331620377132
+INFO:root:energy: 14314.21317603749
+INFO:root:qoe: 0.2754716150225557
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 2246.177582936151
+INFO:root:energy: 12092.226803978121
+INFO:root:qoe: 0.2908896762343209
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 2348.727524058342
+INFO:root:energy: 12253.407023099127
+INFO:root:qoe: 0.26838727759647013
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 2910.466998529434
+INFO:root:energy: 18626.98879058838
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 2757.823013497489
+INFO:root:energy: 5679.310063403602
+INFO:root:qoe: 0.373311315461943
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0
+INFO:root:./rltaskoffloading/offloading_data/offload_random45_test/random.45.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 2043.4063558368682
+INFO:root:energy: 15223.331276192237
+INFO:root:qoe: 0.3021634116210721
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 2074.407362168857
+INFO:root:energy: 15274.05584524181
+INFO:root:qoe: 0.2955926619697196
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 2323.2672520982196
+INFO:root:energy: 13164.999836650304
+INFO:root:qoe: 0.3074779256545766
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 2405.9386612938474
+INFO:root:energy: 13167.385814352985
+INFO:root:qoe: 0.29587304627789257
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 3182.146399717331
+INFO:root:energy: 20365.73695819092
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 2833.301894087928
+INFO:root:energy: 6245.447410831103
+INFO:root:qoe: 0.3984316503154563
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0
+INFO:root:./rltaskoffloading/offloading_data/offload_random50_test/random.50.
+INFO:root:HEFT algorighm result: 
+INFO:root:latency: 2391.006298803329
+INFO:root:energy: 17620.752165519214
+INFO:root:qoe: 0.29604739991846807
+INFO:root: 
+INFO:root:Greedy algorighm result: 
+INFO:root:latency: 2431.6348426726204
+INFO:root:energy: 17621.99508955983
+INFO:root:qoe: 0.2906623833638788
+INFO:root: 
+INFO:root:round roubin algorighm result: 
+INFO:root:latency: 2754.365167416164
+INFO:root:energy: 15160.497628410272
+INFO:root:qoe: 0.2986163735313669
+INFO:root: 
+INFO:root:random algorighm result: 
+INFO:root:latency: 2903.2870931275233
+INFO:root:energy: 14976.565055563462
+INFO:root:qoe: 0.2846443471955849
+INFO:root: 
+INFO:root:all local algorighm result: 
+INFO:root:latency: 3662.96231757164
+INFO:root:energy: 23442.9588324585
+INFO:root:qoe: 0.0
+INFO:root: 
+INFO:root:all remote algorigthm result: 
+INFO:root:latency: 3560.6513706877568
+INFO:root:energy: 7133.520024215677
+INFO:root:qoe: 0.36321206249290433
+INFO:root:optimal qoe algorithm result: 
+INFO:root:optimal qoe: -1.0
+INFO:root:optimal qoe latency: -1.0
+INFO:root:optimal qoe energy: -1.0

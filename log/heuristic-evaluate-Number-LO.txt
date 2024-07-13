@@ -18,9 +18,9 @@ INFO:root:energy: 2955.065030888585
 INFO:root:qoe: 0.08643283531428599
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 659.4507893532343
-INFO:root:energy: 2967.7542184711783
-INFO:root:qoe: 0.07434600236454808
+INFO:root:latency: 663.6689823570251
+INFO:root:energy: 2957.0034199948336
+INFO:root:qoe: 0.06977833711575271
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 723.1429785346985
@@ -52,9 +52,9 @@ INFO:root:energy: 4263.20216221102
 INFO:root:qoe: 0.13788935206466946
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 914.6250696035114
-INFO:root:energy: 4415.042253595864
-INFO:root:qoe: 0.11909234060955627
+INFO:root:latency: 921.2341217250826
+INFO:root:energy: 4329.190235072197
+INFO:root:qoe: 0.11201320815272352
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 1053.4447802829743
@@ -86,9 +86,9 @@ INFO:root:energy: 5764.2572909247065
 INFO:root:qoe: 0.17924833363245965
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 1179.284014548574
-INFO:root:energy: 5828.346786809955
-INFO:root:qoe: 0.15176197976760136
+INFO:root:latency: 1181.4485463057927
+INFO:root:energy: 5893.87241018182
+INFO:root:qoe: 0.1505461166891777
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 1394.4960449123382
@@ -120,9 +120,9 @@ INFO:root:energy: 7321.846467994428
 INFO:root:qoe: 0.22077585449457973
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 1434.427616861207
-INFO:root:energy: 7599.365347616753
-INFO:root:qoe: 0.19911661405971617
+INFO:root:latency: 1446.858841004508
+INFO:root:energy: 7553.736243749803
+INFO:root:qoe: 0.18995263589064812
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 1796.0528694820405
@@ -154,9 +154,9 @@ INFO:root:energy: 8884.288953915124
 INFO:root:qoe: 0.21001236812809684
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 1717.2128706866677
-INFO:root:energy: 9115.94924174456
-INFO:root:qoe: 0.19808420867015422
+INFO:root:latency: 1751.4710407259804
+INFO:root:energy: 9074.379909035646
+INFO:root:qoe: 0.18595640666399457
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 2154.7145264053343
@@ -188,9 +188,9 @@ INFO:root:energy: 10183.37362563043
 INFO:root:qoe: 0.1818889310424116
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2059.3915025155206
-INFO:root:energy: 10427.088733551855
-INFO:root:qoe: 0.16634655608867038
+INFO:root:latency: 2047.6150430706575
+INFO:root:energy: 10328.668985410353
+INFO:root:qoe: 0.17376687395693569
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 2463.6870020484926
@@ -222,9 +222,9 @@ INFO:root:energy: 12092.226803978121
 INFO:root:qoe: 0.23265482701011192
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2342.32887446349
-INFO:root:energy: 12227.847543095506
-INFO:root:qoe: 0.1969921648956303
+INFO:root:latency: 2320.833135019166
+INFO:root:energy: 12296.73594209645
+INFO:root:qoe: 0.20640017250040205
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 2910.466998529434
@@ -256,9 +256,9 @@ INFO:root:energy: 13164.999836650304
 INFO:root:qoe: 0.2629628509150143
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2440.4119587436403
-INFO:root:energy: 13153.767730149364
-INFO:root:qoe: 0.22897393897011745
+INFO:root:latency: 2431.3341820156916
+INFO:root:energy: 13416.459947994494
+INFO:root:qoe: 0.23135130698764597
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 3182.146399717331
@@ -290,9 +290,9 @@ INFO:root:energy: 15160.497628410272
 INFO:root:qoe: 0.2457856619388037
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2910.2770616613107
-INFO:root:energy: 15354.617422618343
-INFO:root:qoe: 0.20668932750454322
+INFO:root:latency: 2877.3942298163
+INFO:root:energy: 15542.458930789318
+INFO:root:qoe: 0.21521449873698958
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 3662.96231757164

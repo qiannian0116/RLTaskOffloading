@@ -18,9 +18,9 @@ INFO:root:energy: 2955.065030888585
 INFO:root:qoe: 0.2230722109681677
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 657.8314084078925
-INFO:root:energy: 3137.6841202216233
-INFO:root:qoe: 0.2006297914947304
+INFO:root:latency: 657.6048947531837
+INFO:root:energy: 2996.047011439035
+INFO:root:qoe: 0.21546594440514447
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 723.1429785346985
@@ -52,9 +52,9 @@ INFO:root:energy: 4263.20216221102
 INFO:root:qoe: 0.2520717731995814
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 889.1578175337655
-INFO:root:energy: 4398.368557087381
-INFO:root:qoe: 0.24120354351642168
+INFO:root:latency: 910.8887659431186
+INFO:root:energy: 4508.573888821302
+INFO:root:qoe: 0.22644513922750206
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 1053.4447802829743
@@ -86,9 +86,9 @@ INFO:root:energy: 5764.2572909247065
 INFO:root:qoe: 0.2662705289091173
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 1172.0988091215406
-INFO:root:energy: 5859.065129142108
-INFO:root:qoe: 0.24865646231234617
+INFO:root:latency: 1176.8609458105902
+INFO:root:energy: 5753.275233706361
+INFO:root:qoe: 0.2532472778838479
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 1394.4960449123382
@@ -120,9 +120,9 @@ INFO:root:energy: 7321.846467994428
 INFO:root:qoe: 0.29086372002540417
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 1452.5921534088675
-INFO:root:energy: 7506.3993496355115
-INFO:root:qoe: 0.26529079760620866
+INFO:root:latency: 1438.5205243970327
+INFO:root:energy: 7442.665381587285
+INFO:root:qoe: 0.27430628419212105
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 1796.0528694820405
@@ -154,9 +154,9 @@ INFO:root:energy: 8884.288953915124
 INFO:root:qoe: 0.2817344938371338
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 1772.4109254034588
-INFO:root:energy: 8985.88123410128
-INFO:root:qoe: 0.26009812704278396
+INFO:root:latency: 1721.682467969622
+INFO:root:energy: 8954.406998043693
+INFO:root:qoe: 0.2737362054380796
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 2154.7145264053343
@@ -188,9 +188,9 @@ INFO:root:energy: 10183.37362563043
 INFO:root:qoe: 0.2670939577165224
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2025.1005510236198
-INFO:root:energy: 10242.550969945136
-INFO:root:qoe: 0.26402214797808643
+INFO:root:latency: 2033.8519108866283
+INFO:root:energy: 10393.583027709894
+INFO:root:qoe: 0.2588052899881004
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 2463.6870020484926
@@ -222,9 +222,9 @@ INFO:root:energy: 12092.226803978121
 INFO:root:qoe: 0.2908896762343209
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2333.3169750385287
-INFO:root:energy: 12144.693891833496
-INFO:root:qoe: 0.2722520898808719
+INFO:root:latency: 2348.727524058342
+INFO:root:energy: 12253.407023099127
+INFO:root:qoe: 0.26838727759647013
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 2910.466998529434
@@ -256,9 +256,9 @@ INFO:root:energy: 13164.999836650304
 INFO:root:qoe: 0.3074779256545766
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2422.8420855080744
-INFO:root:energy: 13301.357465231542
-INFO:root:qoe: 0.2897569499838003
+INFO:root:latency: 2405.9386612938474
+INFO:root:energy: 13167.385814352985
+INFO:root:qoe: 0.29587304627789257
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 3182.146399717331
@@ -290,9 +290,9 @@ INFO:root:energy: 15160.497628410272
 INFO:root:qoe: 0.2986163735313669
 INFO:root: 
 INFO:root:random algorighm result: 
-INFO:root:latency: 2877.7138723336625
-INFO:root:energy: 15068.431442372352
-INFO:root:qoe: 0.28537258276518745
+INFO:root:latency: 2903.2870931275233
+INFO:root:energy: 14976.565055563462
+INFO:root:qoe: 0.2846443471955849
 INFO:root: 
 INFO:root:all local algorighm result: 
 INFO:root:latency: 3662.96231757164
