@@ -9,6 +9,7 @@ def get_device_str(device_id, num_gpus):
   device_str_output = "/gpu:%d" % (device_id % num_gpus)
   return device_str_output
 
+# 创建一个单层 RNN 单元
 def _single_cell(unit_type, num_units, forget_bias, dropout, mode,
                  residual_connection=False, device_str=None, residual_fn=None):
   """Create an instance of a single RNN cell."""
@@ -56,7 +57,7 @@ def _single_cell(unit_type, num_units, forget_bias, dropout, mode,
 
   return single_cell
 
-
+# 创建一个包含多个 RNN 单元的列表，用于构建多层 RNN
 def _cell_list(unit_type, num_units, num_layers, num_residual_layers,
                forget_bias, dropout, mode, num_gpus, base_gpu=0,
                single_cell_fn=None, residual_fn=None):

@@ -538,7 +538,7 @@ def DRLTO_trans(lambda_t = 1.0, lambda_e = 0.0, logpath="./log/all-graph-LO",
            train_graph_file_paths=["../offloading_data/offload_random10/random.10."],
            test_graph_file_paths=["../offloading_data/offload_random10_test/random.10."],
            batch_size=500, graph_number=500,
-           bandwidths=[3.0, 7.0, 11.0, 15.0, 19.0]):
+           bandwidths=[7.0, 11.0, 15.0, 19.0]):
     hparams = tf.contrib.training.HParams(
         unit_type=unit_type,
         num_units=num_units,

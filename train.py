@@ -66,7 +66,7 @@ def train(args):
                 DRLTO_trans(lambda_t=1.0, lambda_e=0.0, logpath=logpath, encode_dependencies=args.dependency,
                              train_graph_file_paths=graph_paths_train_for_trans,
                              test_graph_file_paths=graph_paths_test_for_trans,
-                             bandwidths=[3.0, 7.0, 11.0, 15.0, 19.0])
+                             bandwidths=[7.0, 11.0, 15.0, 19.0])
             elif args.goal == "EE":
                 DRLTO_trans(lambda_t=0.5, lambda_e=0.5, logpath=logpath, encode_dependencies=args.dependency,
                              train_graph_file_paths=graph_paths_train_for_trans,

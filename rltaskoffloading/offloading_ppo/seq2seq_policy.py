@@ -61,11 +61,11 @@ class Seq2seqPolicy(object):
                  name,
                  hparams,
                  reuse,
-                 encoder_inputs,
-                 encoder_lengths,
-                 decoder_inputs,
-                 decoder_full_length,
-                 decoder_targets):
+                 encoder_inputs,    # 编码器的输入序列
+                 encoder_lengths,   # 编码器的输入序列长度
+                 decoder_inputs,    # 解码器的输入序列
+                 decoder_full_length,   # 解码器的输入序列的全长
+                 decoder_targets):  # 解码器的目标序列，用于监督训练
         self.encoder_hidden_unit = hparams.num_units
         self.decoder_hidden_unit = hparams.num_units
         self.is_bidencoder = hparams.is_bidencoder
@@ -166,6 +166,7 @@ class Seq2seqPolicy(object):
 
             self.greedy_decoder_prediction = self.greedy_decoder_outputs.sample_id
 
+    # 在训练模式下运行模型，获取解码器的预测结果和输出的 softmax 概率分布。
     def predict_training(self, sess, encoder_input_batch, decoder_input, decoder_full_length):
         return sess.run([self.decoder_prediction, self.pi],
                         feed_dict={
@@ -174,13 +175,14 @@ class Seq2seqPolicy(object):
                             self.decoder_full_length: decoder_full_length
                         })
 
+    # 从当前的策略中进行采样，用于强化学习中的采样操作
     def sample_from_current_policy(self, sess, encoder_input_batch, decoder_full_length):
         return sess.run([self.sample_decoder_prediction, self.sample_vf],
                         feed_dict={
                             self.encoder_inputs: encoder_input_batch,
                             self.decoder_full_length: decoder_full_length
                         })
-
+    # 执行模型的单步计算，包括解码器的采样预测、价值函数（vf）和损失（neglogp）计算
     def step(self, encoder_input_batch, decoder_full_length, encoder_lengths):
         sess = tf.get_default_session()
 
@@ -202,6 +204,7 @@ class Seq2seqPolicy(object):
 
         return sample_decoder_prediction, sample_vf, sample_neglogp
 
+    # 使用贪婪解码策略生成序列预测
     def greedy_predict(self, encoder_input_batch, encoder_lengths, decoder_full_length):
         sess = tf.get_default_session()
         if self.time_major == True:
@@ -218,6 +221,7 @@ class Seq2seqPolicy(object):
 
         return greedy_prediction
 
+    # 计算策略的 KL 散度，用于 PPO 算法的优化
     def kl(self, other):
         a0 = self.decoder_logits - tf.reduce_max(self.decoder_logits, axis=-1, keepdims=True)
         a1 = other.decoder_logits - tf.reduce_max(other.decoder_logits, axis=-1, keepdims=True)
@@ -228,6 +232,7 @@ class Seq2seqPolicy(object):
         p0 = ea0 / z0
         return tf.reduce_sum(p0 * (a0 - tf.log(z0) - a1 + tf.log(z1)), axis=-1)
 
+    # 计算策略的熵，用于 PPO 算法的优化
     def entropy(self):
         a0 = self.decoder_logits - tf.reduce_max(self.decoder_logits, axis=-1, keepdims=True)
         ea0 = tf.exp(a0)
@@ -274,6 +279,7 @@ class Seq2seqPolicy(object):
             base_gpu=base_gpu,
             single_cell_fn=self.single_cell_fn)
 
+    # 创建编码器，该编码器使用 RNN 单元（如 GRU、LSTM）处理输入序列并输出状态
     def create_encoder(self, hparams):
         # Build RNN cell
         with tf.variable_scope("encoder", reuse=tf.AUTO_REUSE) as scope:
@@ -327,9 +333,10 @@ class Seq2seqPolicy(object):
                 encoder_state = tuple(encoder_state)
 
             return encoder_outputs, encoder_state
-
+    # 创建解码器，用于生成序列的预测结果
     def create_decoder(self, hparams, encoder_outputs, encoder_state, model):
         with tf.variable_scope("decoder", reuse=tf.AUTO_REUSE) as decoder_scope:
+            # 贪婪解码，通过选择每个时间步的最大概率输出
             if model == "greedy":
                 helper = tf.contrib.seq2seq.GreedyEmbeddingHelper(
                     self.embeddings,
@@ -338,6 +345,7 @@ class Seq2seqPolicy(object):
                     end_token=self.end_token
                 )
 
+            # 基于 logits 采样解码，生成多样化的输出
             elif model == "sample":
                 helper = FixedSequenceLearningSampleEmbedingHelper(
                     sequence_length=self.decoder_full_length,
@@ -346,6 +354,7 @@ class Seq2seqPolicy(object):
                     end_token=self.end_token
                 )
 
+            # 用于训练过程的解码器，直接从目标序列中获取下一个时间步的输入
             elif model == "train":
                 helper = tf.contrib.seq2seq.TrainingHelper(
                     self.decoder_embeddings,
@@ -357,6 +366,8 @@ class Seq2seqPolicy(object):
                     self.decoder_full_length,
                     time_major=self.time_major)
 
+            # 如果启用了注意力机制，解码器将通过 LuongAttention 机制对编码器的输出进行加权，
+            # 帮助解码器在生成每个时间步的输出时考虑不同输入时间步的重要性
             if self.is_attention:
                 decoder_cell = self._build_decoder_cell(hparams=hparams,
                                                         num_layers=self.num_layers,

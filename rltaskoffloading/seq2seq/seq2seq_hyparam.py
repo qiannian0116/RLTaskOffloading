@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+# 循环神经网络（RNN）定义超参数，特别是 LSTM（长短期记忆网络）模型
 def get_hparams():
     '''
     hparams = tf.contrib.training.HParams(
@@ -45,6 +46,7 @@ def get_hparams():
 
     return hparams
 
+# 定义值网络（用于强化学习中的状态价值评估）的超参数
 # hyper-parameters for value networks
 def get_value_network_hparams():
     hparams = tf.contrib.training.HParams(
@@ -68,7 +70,7 @@ def get_value_network_hparams():
 
     return hparams
 
-
+# 为计算成本模型定义超参数，这可能涉及在序列模型上评估某些开销或成本函数
 def get_cost_hparams():
     hparams = tf.contrib.training.HParams(
         unit_type="layer_norm_lstm",
@@ -91,6 +93,7 @@ def get_cost_hparams():
 
     return hparams
 
+# 为卷积神经网络（CNN）的成本模型定义超参数
 def get_cnn_cost_hparams():
     hparams = tf.contrib.training.HParams(
         learning_rate=0.001,
